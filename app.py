@@ -5,20 +5,20 @@ import pandas as pd
 from datetime import datetime
 from io import BytesIO
 
-# Paths
+
 CHECKLIST_PATH = "data/master_checklist.json"
 AUDIT_LOG_PATH = "data/audit_logs/"
 ASSIGNMENTS_PATH = "data/assignments.json"
 USERS_PATH = "data/users.json"
 
-# Default users
+
 DEFAULT_USERS = {
     "manager": {"password": "admin123", "role": "manager"},
     "employee1": {"password": "emp123", "role": "employee"},
     "employee2": {"password": "emp456", "role": "employee"},
 }
 
-# Ensure directories and files exist
+
 os.makedirs("data", exist_ok=True)
 os.makedirs(AUDIT_LOG_PATH, exist_ok=True)
 if not os.path.exists(CHECKLIST_PATH):
@@ -31,7 +31,7 @@ if not os.path.exists(USERS_PATH):
     with open(USERS_PATH, "w") as f:
         json.dump(DEFAULT_USERS, f, indent=4)
 
-# Load/save functions
+
 def load_master_checklist():
     with open(CHECKLIST_PATH, "r") as f:
         return json.load(f)
@@ -52,14 +52,14 @@ def save_assignments(data):
     with open(ASSIGNMENTS_PATH, "w") as f:
         json.dump(data, f, indent=4)
 
-# Session state
+
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
     st.session_state.role = None
     st.session_state.username = None
 
 def login():
-    st.title("🔐 IFC Tool Login")
+    st.title(" IFC Tool Login")
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
     users = load_users()
@@ -73,7 +73,7 @@ def login():
             st.error("Invalid username or password")
 
 def master_checklist_page():
-    st.title("📝 Master Checklist Manager")
+    st.title(" Master Checklist Manager")
     checklist = load_master_checklist()
     users = load_users()
     assignments = load_assignments()
@@ -105,7 +105,7 @@ def master_checklist_page():
             selected = st.multiselect(f"Assign to {user}", options, default=pre_selected, key=user)
             new_assignments[user] = [int(item.split(":")[0]) for item in selected]
 
-    if st.button("💾 Save Changes"):
+    if st.button(" Save Changes"):
         save_assignments(new_assignments)
         st.success("Assignments saved successfully!")
 
@@ -114,7 +114,7 @@ def master_checklist_page():
         st.markdown(f"**{idx+1}. {item['question']}** ({item['input_type']})")
         if item['input_type'] == 'Dropdown':
             st.markdown(f"Options: {', '.join(item['options'])}")
-        if st.button(f"❌ Delete {idx+1}"):
+        if st.button(f" Delete {idx+1}"):
             checklist.pop(idx)
             for i, itm in enumerate(checklist):
                 itm['id'] = i
@@ -122,7 +122,7 @@ def master_checklist_page():
             st.rerun()
 
 def employee_checklist_page():
-    st.title("✅ Fill Assigned Checklist")
+    st.title("Fill Assigned Checklist")
     checklist = load_master_checklist()
     assignments = load_assignments()
     username = st.session_state.username
@@ -155,7 +155,7 @@ def employee_checklist_page():
         st.success(f"Audit saved to {filename}")
 
     if os.listdir(AUDIT_LOG_PATH):
-        st.subheader("📥 Download Previous Audits")
+        st.subheader(" Download Previous Audits")
         files = sorted(os.listdir(AUDIT_LOG_PATH), reverse=True)
         selected_file = st.selectbox("Select a file to download", files)
         if selected_file:
@@ -169,7 +169,7 @@ def employee_checklist_page():
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
 
-# MAIN APP
+
 if not st.session_state.logged_in:
     login()
 else:
