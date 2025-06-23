@@ -1,0 +1,392 @@
+[
+    {
+        "id": 0,
+        "question": "Rate the effectiveness of user access reviews",
+        "input_type": "Dropdown",
+        "options": [
+            "Highly Effective",
+            "Moderately Effective",
+            "Ineffective"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "Describe any weaknesses observed in password management practices",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 2,
+        "question": "Rate the frequency of management review meetings",
+        "input_type": "Dropdown",
+        "options": [
+            "Monthly",
+            "Quarterly",
+            "Annually"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "Provide details of any exceptions to procurement procedures",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 4,
+        "question": "Is there an approved policy for information security?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 5,
+        "question": "Rate the adequacy of training provided to new employees",
+        "input_type": "Dropdown",
+        "options": [
+            "Adequate",
+            "Moderate",
+            "Inadequate"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "Describe any issues found with vendor management",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 7,
+        "question": "Are system backups performed as per policy?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 8,
+        "question": "Rate the timeliness of incident response",
+        "input_type": "Dropdown",
+        "options": [
+            "Prompt",
+            "Acceptable",
+            "Delayed"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "Enter any observations regarding data retention practices",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 10,
+        "question": "Is dual control enforced for critical transactions?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 11,
+        "question": "Rate the effectiveness of fraud detection controls",
+        "input_type": "Dropdown",
+        "options": [
+            "Highly Effective",
+            "Moderately Effective",
+            "Ineffective"
+        ]
+    },
+    {
+        "id": 12,
+        "question": "Provide your comments on the payroll process controls",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 13,
+        "question": "Are change management procedures documented?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 14,
+        "question": "Rate the documentation quality of policies and procedures",
+        "input_type": "Dropdown",
+        "options": [
+            "Excellent",
+            "Satisfactory",
+            "Needs Improvement"
+        ]
+    },
+    {
+        "id": 15,
+        "question": "Note any deficiencies in expense reporting",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 16,
+        "question": "Are audit logs reviewed regularly?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 17,
+        "question": "Rate the clarity of roles and responsibilities",
+        "input_type": "Dropdown",
+        "options": [
+            "Clear",
+            "Somewhat Clear",
+            "Unclear"
+        ]
+    },
+    {
+        "id": 18,
+        "question": "Describe any issues identified in cash handling procedures",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 19,
+        "question": "Is there a formal process for risk assessment?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 20,
+        "question": "Rate the adequacy of business continuity planning",
+        "input_type": "Dropdown",
+        "options": [
+            "Comprehensive",
+            "Partial",
+            "Insufficient"
+        ]
+    },
+    {
+        "id": 21,
+        "question": "Provide details regarding any gaps in compliance monitoring",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 22,
+        "question": "Are third-party service providers evaluated annually?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 23,
+        "question": "Rate the effectiveness of communication channels",
+        "input_type": "Dropdown",
+        "options": [
+            "Effective",
+            "Somewhat Effective",
+            "Ineffective"
+        ]
+    },
+    {
+        "id": 24,
+        "question": "Comment on the adequacy of segregation of incompatible duties",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 25,
+        "question": "Is there evidence of management oversight on key controls?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 26,
+        "question": "Rate the appropriateness of approval hierarchies",
+        "input_type": "Dropdown",
+        "options": [
+            "Appropriate",
+            "Somewhat Appropriate",
+            "Inappropriate"
+        ]
+    },
+    {
+        "id": 27,
+        "question": "Note any limitations in system user access controls",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 28,
+        "question": "Are periodic reconciliations performed for key accounts?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 29,
+        "question": "Rate the transparency of financial reporting",
+        "input_type": "Dropdown",
+        "options": [
+            "High",
+            "Moderate",
+            "Low"
+        ]
+    },
+    {
+        "id": 30,
+        "question": "Describe any bottlenecks in the procurement process",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 31,
+        "question": "Is there a whistleblower policy in place?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 32,
+        "question": "Rate the level of automation in key processes",
+        "input_type": "Dropdown",
+        "options": [
+            "High",
+            "Moderate",
+            "Low"
+        ]
+    },
+    {
+        "id": 33,
+        "question": "Enter observations on the management of petty cash",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 34,
+        "question": "Are IT general controls regularly tested?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 35,
+        "question": "Rate the adequacy of internal audit coverage",
+        "input_type": "Dropdown",
+        "options": [
+            "Comprehensive",
+            "Partial",
+            "Insufficient"
+        ]
+    },
+    {
+        "id": 36,
+        "question": "Comment on the effectiveness of monitoring activities",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 37,
+        "question": "Is data encrypted during transmission?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 38,
+        "question": "Rate the timeliness of financial close processes",
+        "input_type": "Dropdown",
+        "options": [
+            "Timely",
+            "Somewhat Timely",
+            "Delayed"
+        ]
+    },
+    {
+        "id": 39,
+        "question": "Describe any gaps in policy enforcement",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 40,
+        "question": "Are disaster recovery plans tested annually?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 41,
+        "question": "Rate the adequacy of physical security measures",
+        "input_type": "Dropdown",
+        "options": [
+            "Adequate",
+            "Moderate",
+            "Inadequate"
+        ]
+    },
+    {
+        "id": 42,
+        "question": "Provide your observations on the onboarding process",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 43,
+        "question": "Is there a process for managing conflicts of interest?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 44,
+        "question": "Rate the frequency of policy updates",
+        "input_type": "Dropdown",
+        "options": [
+            "Frequent",
+            "Occasional",
+            "Rare"
+        ]
+    },
+    {
+        "id": 45,
+        "question": "Describe any recurring issues in inventory management",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 46,
+        "question": "Are corrective actions tracked to closure?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 47,
+        "question": "Is segregation of duties implemented?",
+        "input_type": "Yes/No",
+        "options": []
+    },
+    {
+        "id": 48,
+        "question": "describe briefly about yourself",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 49,
+        "question": "describe about yourself",
+        "input_type": "Text",
+        "options": []
+    },
+    {
+        "id": 50,
+        "question": "tell me about abc",
+        "input_type": "Dropdown",
+        "options": [
+            "good",
+            "bad",
+            "ugly"
+        ]
+    },
+    {
+        "id": 51,
+        "question": "tell me about the process",
+        "input_type": "Dropdown",
+        "options": []
+    },
+    {
+        "id": 52,
+        "question": "tell me about the process",
+        "input_type": "Dropdown",
+        "options": [
+            "a",
+            "b",
+            "c"
+        ]
+    }
+]

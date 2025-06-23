@@ -1,0 +1,14 @@
+{
+    "manager": {
+        "password": "admin123",
+        "role": "manager"
+    },
+    "employee1": {
+        "password": "emp123",
+        "role": "employee"
+    },
+    "employee2": {
+        "password": "emp456",
+        "role": "employee"
+    }
+}
